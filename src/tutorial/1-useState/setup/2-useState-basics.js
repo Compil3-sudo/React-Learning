@@ -21,9 +21,11 @@ const UseStateBasics = () => {
 
   return (
     <React.Fragment>
-      <h2>useState basic example</h2>
-      <h2>{title}</h2>
-      <button type="button" className='btn' onClick={handleClick}>change title</button>
+      <div className='container'>
+        <h2>useState basic example</h2>
+        <h2>{title}</h2>
+        <button type="button" className='btn' onClick={handleClick}>change title</button>
+      </div>
     </React.Fragment>
   );
 };

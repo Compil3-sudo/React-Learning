@@ -16,21 +16,23 @@ const UseStateCounter = () => {
 
   return (
     <>
-      <h2>useState counter example</h2>
-      <section style={{ margin: '4rem 0' }}>
-        <h2>regulat counter</h2>
-        <h1>{value}</h1>
-        <button className='btn' onClick={() => setValue(value - 1)}>decrease</button>
-        <button className='btn' onClick={() => setValue(0)}>reset</button>
-        <button className='btn' onClick={() => setValue(value + 1)}>increase</button>
-      </section>
-      <section style={{ margin: '4rem 0' }}>
-        <h2>more complex counter</h2>
-        <h1>{value}</h1>
-        <button className='btn' onClick={complexIncrease}>
-          increase later
-        </button>
-      </section>
+      <div className='container'>
+        <h2>useState counter example</h2>
+        <section style={{ margin: '4rem 0' }}>
+          <h2>regular counter</h2>
+          <h1>{value}</h1>
+          <button className='btn' onClick={() => setValue(value - 1)}>decrease</button>
+          <button className='btn' onClick={() => setValue(0)}>reset</button>
+          <button className='btn' onClick={() => setValue(value + 1)}>increase</button>
+        </section>
+        <section style={{ margin: '4rem 0' }}>
+          <h2>more complex counter</h2>
+          <h1>{value}</h1>
+          <button className='btn' onClick={complexIncrease}>
+            increase later
+          </button>
+        </section>
+      </div>
     </>
   );
 };
