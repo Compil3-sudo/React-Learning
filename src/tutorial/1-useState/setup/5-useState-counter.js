@@ -27,6 +27,7 @@ const UseStateCounter = () => {
         </section>
         <section style={{ margin: '4rem 0' }}>
           <h2>more complex counter</h2>
+          <p>Usestate - inside function to update with setValue(previousStyte) arrowfunction</p>
           <h1>{value}</h1>
           <button className='btn' onClick={complexIncrease}>
             increase later

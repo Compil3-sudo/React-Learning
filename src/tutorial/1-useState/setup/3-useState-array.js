@@ -29,12 +29,11 @@ const UseStateArray = () => {
             </div>
           )
         })}
-        {/* 
-      Without the arrow function () => setPeople([])
-      the function for the onClick will be invoked right away (on page render)
-      to invoke the function ONLY when the button is clicked
-      USE ARROW FUNCTION, or a custom function like handleClick and use setPeople there
-      <button className='btn' onClick={setPeople([])}>clear items</button> */}
+        <p>Without the arrow function () arrowfunc setPeople([])
+          the function for the onClick will be invoked right away (on page render)
+          to invoke the function ONLY when the button is clicked
+          USE ARROW FUNCTION, or a custom function like handleClick and use setPeople there
+          "button className='btn' onClick=setPeople([]) clear items button"</p>
         <button className='btn' onClick={() => setPeople([])}>clear items</button>
       </div>
     </>

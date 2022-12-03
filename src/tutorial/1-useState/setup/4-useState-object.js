@@ -23,6 +23,7 @@ const UseStateObject = () => {
     <>
       <div className='container'>
         <h2>useState object example</h2>
+        <p>Use spread operator to get old values from object and only update one value</p>
         <h3>{person.name}</h3>
         <h3>{person.age}</h3>
         <h4>{person.message}</h4>
