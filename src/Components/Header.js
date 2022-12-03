@@ -14,6 +14,10 @@ import UseEffect1 from '../tutorial/2-useEffect/setup/1-useEffect-basics'
 import UseEffect2 from '../tutorial/2-useEffect/setup/2-useEffect-cleanup'
 import UseEffect3 from '../tutorial/2-useEffect/setup/3-useEffect-fetch-data'
 
+import Conditional1 from '../tutorial/3-conditional-rendering/setup/1-multiple-returns'
+import Conditional2 from '../tutorial/3-conditional-rendering/setup/2-short-circuit'
+import Conditional3 from '../tutorial/3-conditional-rendering/setup/3-show-hide'
+
 const Header = () => {
     return (
         <BrowserRouter>
@@ -41,6 +45,13 @@ const Header = () => {
                             <LinkContainer to="/chapter2-3"><NavDropdown.Item>Chapter 2-3</NavDropdown.Item></LinkContainer>
                         </NavDropdown>
 
+                        {/* Chapter 3: conditional Rendering */}
+                        <NavDropdown title="Conditional" id="basic-nav-dropdown">
+                            <LinkContainer to="/chapter3-1"><NavDropdown.Item>Chapter 3-1</NavDropdown.Item></LinkContainer>
+                            <LinkContainer to="/chapter3-2"><NavDropdown.Item>Chapter 3-2</NavDropdown.Item></LinkContainer>
+                            <LinkContainer to="/chapter3-3"><NavDropdown.Item>Chapter 3-3</NavDropdown.Item></LinkContainer>
+                        </NavDropdown>
+
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>
@@ -59,6 +70,11 @@ const Header = () => {
                 <Route exact path="/chapter2-1" element={<UseEffect1 />} />
                 <Route exact path="/chapter2-2" element={<UseEffect2 />} />
                 <Route exact path="/chapter2-3" element={<UseEffect3 />} />
+
+                {/* Chapter 3: conditional Rendering */}
+                <Route exact path="/chapter3-1" element={<Conditional1 />} />
+                <Route exact path="/chapter3-2" element={<Conditional2 />} />
+                <Route exact path="/chapter3-3" element={<Conditional3 />} />
             </Routes>
         </BrowserRouter>
     )
