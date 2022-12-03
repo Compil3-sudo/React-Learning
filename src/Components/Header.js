@@ -3,11 +3,16 @@ import { Navbar, Nav, NavDropdown } from 'react-bootstrap'
 import { LinkContainer } from 'react-router-bootstrap'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Home from './Home'
-import Chapter1 from '../tutorial/1-useState/setup/1-error-example'
-import Chapter2 from '../tutorial/1-useState/setup/2-useState-basics'
-import Chapter3 from '../tutorial/1-useState/setup/3-useState-array'
-import Chapter4 from '../tutorial/1-useState/setup/4-useState-object'
-import Chapter5 from '../tutorial/1-useState/setup/5-useState-counter'
+
+import UseState1 from '../tutorial/1-useState/setup/1-error-example'
+import UseState2 from '../tutorial/1-useState/setup/2-useState-basics'
+import UseState3 from '../tutorial/1-useState/setup/3-useState-array'
+import UseState4 from '../tutorial/1-useState/setup/4-useState-object'
+import UseState5 from '../tutorial/1-useState/setup/5-useState-counter'
+
+import UseEffect1 from '../tutorial/2-useEffect/setup/1-useEffect-basics'
+import UseEffect2 from '../tutorial/2-useEffect/setup/2-useEffect-cleanup'
+import UseEffect3 from '../tutorial/2-useEffect/setup/3-useEffect-fetch-data'
 
 const Header = () => {
     return (
@@ -19,23 +24,41 @@ const Header = () => {
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="mr-auto">
+
+                        {/* Chapter 1: useState */}
                         <NavDropdown title="useState" id="basic-nav-dropdown">
-                            <NavDropdown.Item><LinkContainer to="/chapter1-1"><Nav.Link>Chapter 1-1</Nav.Link></LinkContainer></NavDropdown.Item>
-                            <NavDropdown.Item><LinkContainer to="/chapter1-2"><Nav.Link>Chapter 1-2</Nav.Link></LinkContainer></NavDropdown.Item>
-                            <NavDropdown.Item><LinkContainer to="/chapter1-3"><Nav.Link>Chapter 1-3</Nav.Link></LinkContainer></NavDropdown.Item>
-                            <NavDropdown.Item><LinkContainer to="/chapter1-4"><Nav.Link>Chapter 1-4</Nav.Link></LinkContainer></NavDropdown.Item>
-                            <NavDropdown.Item><LinkContainer to="/chapter1-5"><Nav.Link>Chapter 1-5</Nav.Link></LinkContainer></NavDropdown.Item>
+                            <LinkContainer to="/chapter1-1"><NavDropdown.Item>Chapter 1-1</NavDropdown.Item></LinkContainer>
+                            <LinkContainer to="/chapter1-2"><NavDropdown.Item>Chapter 1-2</NavDropdown.Item></LinkContainer>
+                            <LinkContainer to="/chapter1-3"><NavDropdown.Item>Chapter 1-3</NavDropdown.Item></LinkContainer>
+                            <LinkContainer to="/chapter1-4"><NavDropdown.Item>Chapter 1-4</NavDropdown.Item></LinkContainer>
+                            <LinkContainer to="/chapter1-5"><NavDropdown.Item>Chapter 1-5</NavDropdown.Item></LinkContainer>
                         </NavDropdown>
+
+                        {/* Chapter 2: useEffect */}
+                        <NavDropdown title="useEffect" id="basic-nav-dropdown">
+                            <LinkContainer to="/chapter2-1"><NavDropdown.Item>Chapter 2-1</NavDropdown.Item></LinkContainer>
+                            <LinkContainer to="/chapter2-2"><NavDropdown.Item>Chapter 2-2</NavDropdown.Item></LinkContainer>
+                            <LinkContainer to="/chapter2-3"><NavDropdown.Item>Chapter 2-3</NavDropdown.Item></LinkContainer>
+                        </NavDropdown>
+
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>
             <Routes>
+
                 <Route exact path="/" element={<Home />} />
-                <Route exact path="/chapter1-1" element={<Chapter1 />} />
-                <Route exact path="/chapter1-2" element={<Chapter2 />} />
-                <Route exact path="/chapter1-3" element={<Chapter3 />} />
-                <Route exact path="/chapter1-4" element={<Chapter4 />} />
-                <Route exact path="/chapter1-5" element={<Chapter5 />} />
+
+                {/* Chapter 1: useState */}
+                <Route exact path="/chapter1-1" element={<UseState1 />} />
+                <Route exact path="/chapter1-2" element={<UseState2 />} />
+                <Route exact path="/chapter1-3" element={<UseState3 />} />
+                <Route exact path="/chapter1-4" element={<UseState4 />} />
+                <Route exact path="/chapter1-5" element={<UseState5 />} />
+
+                {/* Chapter 2: useEffect */}
+                <Route exact path="/chapter2-1" element={<UseEffect1 />} />
+                <Route exact path="/chapter2-2" element={<UseEffect2 />} />
+                <Route exact path="/chapter2-3" element={<UseEffect3 />} />
             </Routes>
         </BrowserRouter>
     )
