@@ -16,11 +16,19 @@ const ShortCircuit = () => {
       <h1>{firstValue}</h1>
       <h1>Value: {secondValue}</h1>
 
-      <h1>{text || 'text was false'}</h1>
-      {text && <h1>text was false, so this will not display</h1>}
-      {!text && <h1>text was false but negated, so true</h1>}
+      <p>{text || 'text was false'}</p>
+      {text && <p>text was false, so this will not display</p>}
+      {!text && <p>text was false but negated, so true</p>}
 
-      <button className='btn'>toggle error</button>
+      <button className='btn' onClick={() => setIsError(!isError)}>toggle error</button>
+      {isError && <h1>Error...</h1>}
+      {isError ? (
+        <p>there is an error...</p>
+      ) : (
+        <div>
+          <h2>There is no error</h2>
+        </div>
+      )}
     </div>
   );
 };
