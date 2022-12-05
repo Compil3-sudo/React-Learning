@@ -6,7 +6,11 @@ import React, { useState } from 'react';
 // value, onChange
 
 const ControlledInputs = () => {
-  return <h1>controlled inputs</h1>;
+  return (
+    <div className="container">
+      <h1>controlled inputs</h1>
+    </div>
+  );
 };
 
 export default ControlledInputs;

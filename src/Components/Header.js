@@ -18,6 +18,9 @@ import Conditional1 from '../tutorial/3-conditional-rendering/setup/1-multiple-r
 import Conditional2 from '../tutorial/3-conditional-rendering/setup/2-short-circuit'
 import Conditional3 from '../tutorial/3-conditional-rendering/setup/3-show-hide'
 
+import Form1 from '../tutorial/4-forms/setup/1-controlled-inputs'
+import Form2 from '../tutorial/4-forms/setup/2-multiple-inputs'
+
 const Header = () => {
     return (
         <BrowserRouter>
@@ -52,6 +55,12 @@ const Header = () => {
                             <LinkContainer to="/chapter3-3"><NavDropdown.Item>Chapter 3-3</NavDropdown.Item></LinkContainer>
                         </NavDropdown>
 
+                        {/* Chapter 4: forms */}
+                        <NavDropdown title="Forms" id="basic-nav-dropdown">
+                            <LinkContainer to="/chapter4-1"><NavDropdown.Item>Chapter 4-1</NavDropdown.Item></LinkContainer>
+                            <LinkContainer to="/chapter4-2"><NavDropdown.Item>Chapter 4-2</NavDropdown.Item></LinkContainer>
+                        </NavDropdown>
+
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>
@@ -60,21 +69,25 @@ const Header = () => {
                 <Route exact path="/" element={<Home />} />
 
                 {/* Chapter 1: useState */}
-                <Route exact path="/chapter1-1" element={<UseState1 />} />
-                <Route exact path="/chapter1-2" element={<UseState2 />} />
-                <Route exact path="/chapter1-3" element={<UseState3 />} />
-                <Route exact path="/chapter1-4" element={<UseState4 />} />
-                <Route exact path="/chapter1-5" element={<UseState5 />} />
+                <Route path="/chapter1-1" element={<UseState1 />} />
+                <Route path="/chapter1-2" element={<UseState2 />} />
+                <Route path="/chapter1-3" element={<UseState3 />} />
+                <Route path="/chapter1-4" element={<UseState4 />} />
+                <Route path="/chapter1-5" element={<UseState5 />} />
 
                 {/* Chapter 2: useEffect */}
-                <Route exact path="/chapter2-1" element={<UseEffect1 />} />
-                <Route exact path="/chapter2-2" element={<UseEffect2 />} />
-                <Route exact path="/chapter2-3" element={<UseEffect3 />} />
+                <Route path="/chapter2-1" element={<UseEffect1 />} />
+                <Route path="/chapter2-2" element={<UseEffect2 />} />
+                <Route path="/chapter2-3" element={<UseEffect3 />} />
 
                 {/* Chapter 3: conditional Rendering */}
-                <Route exact path="/chapter3-1" element={<Conditional1 />} />
-                <Route exact path="/chapter3-2" element={<Conditional2 />} />
-                <Route exact path="/chapter3-3" element={<Conditional3 />} />
+                <Route path="/chapter3-1" element={<Conditional1 />} />
+                <Route path="/chapter3-2" element={<Conditional2 />} />
+                <Route path="/chapter3-3" element={<Conditional3 />} />
+
+                {/* Chapter 4: forms */}
+                <Route path="/chapter4-1" element={<Form1 />} />
+                <Route path="/chapter4-2" element={<Form2 />} />
             </Routes>
         </BrowserRouter>
     )
