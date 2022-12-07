@@ -10,9 +10,21 @@ const Modal = ({ modalContent, closeModal }) => {
 
   return (
     // <div className="modal">
-    <div>
-      <p>{modalContent}</p>
-    </div>
+    <div style={{
+      position: 'absolute',
+      top: '2rem',
+      background: '#fff',
+      display: 'inline-block',
+      padding: '0.25rem 1rem',
+      textTransform: 'capitalize'
+    }}>
+      <p style={{
+        marginBottom: 0,
+        color: 'red'
+      }}>
+        {modalContent}
+      </p>
+    </div >
   );
 };
 
