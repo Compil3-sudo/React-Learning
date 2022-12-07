@@ -21,6 +21,9 @@ import Conditional3 from '../tutorial/3-conditional-rendering/setup/3-show-hide'
 import Form1 from '../tutorial/4-forms/setup/1-controlled-inputs'
 import Form2 from '../tutorial/4-forms/setup/2-multiple-inputs'
 
+import Hook1 from '../tutorial/5-useRef/setup/1-useRef-basics'
+import Hook2 from '../tutorial/6-useReducer/setup/'
+
 const Header = () => {
     return (
         <BrowserRouter>
@@ -61,6 +64,12 @@ const Header = () => {
                             <LinkContainer to="/chapter4-2"><NavDropdown.Item>Chapter 4-2</NavDropdown.Item></LinkContainer>
                         </NavDropdown>
 
+                        {/* Chapter 5 & 6: hooks -> useRef and useReducer */}
+                        <NavDropdown title="Hooks" id="basic-nav-dropdown">
+                            <LinkContainer to="/chapter5-1"><NavDropdown.Item>Chapter 5-1</NavDropdown.Item></LinkContainer>
+                            <LinkContainer to="/chapter6-1"><NavDropdown.Item>Chapter 6-1</NavDropdown.Item></LinkContainer>
+                        </NavDropdown>
+
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>
@@ -88,6 +97,10 @@ const Header = () => {
                 {/* Chapter 4: forms */}
                 <Route path="/chapter4-1" element={<Form1 />} />
                 <Route path="/chapter4-2" element={<Form2 />} />
+
+                {/* Chapter 5 & 6: hooks -> useRef and useReducer */}
+                <Route path="/chapter5-1" element={<Hook1 />} />
+                <Route path="/chapter6-1" element={<Hook2 />} />
             </Routes>
         </BrowserRouter>
     )
