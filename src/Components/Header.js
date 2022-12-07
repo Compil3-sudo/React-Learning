@@ -24,6 +24,8 @@ import Form2 from '../tutorial/4-forms/setup/2-multiple-inputs'
 import Hook1 from '../tutorial/5-useRef/setup/1-useRef-basics'
 import Hook2 from '../tutorial/6-useReducer/setup/'
 
+import PropDrilling from '../tutorial/7-prop-drilling/setup/1-prop-drilling'
+
 const Header = () => {
     return (
         <BrowserRouter>
@@ -70,6 +72,8 @@ const Header = () => {
                             <LinkContainer to="/chapter6-1"><NavDropdown.Item>Chapter 6-1</NavDropdown.Item></LinkContainer>
                         </NavDropdown>
 
+                        {/* Chapter 7: prop-drilling */}
+                        <LinkContainer to="/chapter7"><Nav.Link>Chapter 7</Nav.Link></LinkContainer>
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>
@@ -101,6 +105,9 @@ const Header = () => {
                 {/* Chapter 5 & 6: hooks -> useRef and useReducer */}
                 <Route path="/chapter5-1" element={<Hook1 />} />
                 <Route path="/chapter6-1" element={<Hook2 />} />
+
+                {/* Chapter 7: prop-drilling */}
+                <Route path="/chapter7" element={<PropDrilling />} />
             </Routes>
         </BrowserRouter>
     )
