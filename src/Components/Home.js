@@ -10,11 +10,9 @@ function Home() {
                 <h2>Advanced Tutorial</h2>
                 <br />
                 <h4>React Course and projects from <a href="https://react-projects.netlify.app/">John Smilga</a></h4>
-
             </div>
 
             <div className="grid-container">
-
                 {links.map((link, index) => {
                     const { id, url, text, image } = link;
 
