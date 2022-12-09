@@ -29,6 +29,10 @@ import CustomHooks from '../tutorial/9-custom-hooks/setup/1-fetch-example'
 import PropDrilling from '../tutorial/7-prop-drilling/setup/1-prop-drilling'
 import PropTypes from '../tutorial/10-prop-types/setup'
 
+import ReactRouter from '../tutorial/11-react-router/setup'
+
+import Error from '../tutorial/11-react-router/setup/Error'
+
 const Header = () => {
     return (
         <BrowserRouter>
@@ -82,11 +86,14 @@ const Header = () => {
 
                         {/* Chapter 10: Prop Types */}
                         <LinkContainer to="/chapter10"><Nav.Link>Prop Types</Nav.Link></LinkContainer>
+
+                        {/* Chapter 11: React Router */}
+                        <LinkContainer to="/chapter11"><Nav.Link>React Router</Nav.Link></LinkContainer>
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>
-            <Routes>
 
+            <Routes>
                 <Route exact path="/" element={<Home />} />
 
                 {/* Chapter 1: useState */}
@@ -125,6 +132,12 @@ const Header = () => {
 
                 {/* Chapter 10: Prop Types */}
                 <Route path="/chapter10" element={<PropTypes />} />
+
+                {/* Chapter 11: React Router */}
+                <Route path="/chapter11" element={<ReactRouter />} />
+
+                {/* Error page */}
+                <Route path="*" element={<Error />} />
             </Routes>
         </BrowserRouter>
     )
