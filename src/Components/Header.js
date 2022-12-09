@@ -27,6 +27,7 @@ import Hook3 from '../tutorial/8-useContext/setup/1-context-api'
 import CustomHooks from '../tutorial/9-custom-hooks/setup/1-fetch-example'
 
 import PropDrilling from '../tutorial/7-prop-drilling/setup/1-prop-drilling'
+import PropTypes from '../tutorial/10-prop-types/setup'
 
 const Header = () => {
     return (
@@ -78,6 +79,9 @@ const Header = () => {
 
                         {/* Chapter 7: prop-drilling */}
                         <LinkContainer to="/chapter7"><Nav.Link>Prop Drilling</Nav.Link></LinkContainer>
+
+                        {/* Chapter 10: Prop Types */}
+                        <LinkContainer to="/chapter10"><Nav.Link>Prop Types</Nav.Link></LinkContainer>
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>
@@ -118,6 +122,9 @@ const Header = () => {
 
                 {/* Chapter 9: Custom Hooks */}
                 <Route path="/chapter9" element={<CustomHooks />} />
+
+                {/* Chapter 10: Prop Types */}
+                <Route path="/chapter10" element={<PropTypes />} />
             </Routes>
         </BrowserRouter>
     )
