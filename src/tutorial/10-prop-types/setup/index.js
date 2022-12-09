@@ -8,8 +8,9 @@ const url = 'https://course-api.com/react-prop-types-example'
 
 const Index = () => {
   const { products } = useFetch(url)
+
   return (
-    <div>
+    <div className='container'>
       <h2>products</h2>
       <section className='products'>
         {products.map((product) => {
