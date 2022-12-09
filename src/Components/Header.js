@@ -24,6 +24,7 @@ import Form2 from '../tutorial/4-forms/setup/2-multiple-inputs'
 import Hook1 from '../tutorial/5-useRef/setup/1-useRef-basics'
 import Hook2 from '../tutorial/6-useReducer/setup/'
 import Hook3 from '../tutorial/8-useContext/setup/1-context-api'
+import Hook4 from '../tutorial/12-memo-useMemo-useCallback/setup/index'
 import CustomHooks from '../tutorial/9-custom-hooks/setup/1-fetch-example'
 
 import PropDrilling from '../tutorial/7-prop-drilling/setup/1-prop-drilling'
@@ -73,12 +74,13 @@ const Header = () => {
                             <LinkContainer to="/chapter4-2"><NavDropdown.Item>Chapter 4-2</NavDropdown.Item></LinkContainer>
                         </NavDropdown>
 
-                        {/* Chapter 5, 6, 8, 9: hooks -> useRef, useReducer, useContext and custom hooks */}
+                        {/* Chapter 5, 6, 8, 9, 12: hooks -> useRef, useReducer, useContext and custom hooks */}
                         <NavDropdown title="Hooks" id="basic-nav-dropdown">
                             <LinkContainer to="/chapter5"><NavDropdown.Item>useRef</NavDropdown.Item></LinkContainer>
                             <LinkContainer to="/chapter6"><NavDropdown.Item>useReducer</NavDropdown.Item></LinkContainer>
                             <LinkContainer to="/chapter8"><NavDropdown.Item>useContext</NavDropdown.Item></LinkContainer>
                             <LinkContainer to="/chapter9"><NavDropdown.Item>Custom Hooks</NavDropdown.Item></LinkContainer>
+                            <LinkContainer to="/chapter12"><NavDropdown.Item>useMemo</NavDropdown.Item></LinkContainer>
                         </NavDropdown>
 
                         {/* Chapter 7: prop-drilling */}
@@ -120,12 +122,14 @@ const Header = () => {
                 {/* Chapter 5 & 6: hooks -> useRef and useReducer */}
                 <Route path="/chapter5" element={<Hook1 />} />
                 <Route path="/chapter6" element={<Hook2 />} />
+                {/* Chapter 8: useContext */}
+                <Route path="/chapter8" element={<Hook3 />} />
+                {/* Chapter 12: useMemo */}
+                <Route path="/chapter12" element={<Hook4 />} />
 
                 {/* Chapter 7: prop-drilling */}
                 <Route path="/chapter7" element={<PropDrilling />} />
 
-                {/* Chapter 8: useContext */}
-                <Route path="/chapter8" element={<Hook3 />} />
 
                 {/* Chapter 9: Custom Hooks */}
                 <Route path="/chapter9" element={<CustomHooks />} />
