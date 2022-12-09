@@ -23,6 +23,8 @@ import Form2 from '../tutorial/4-forms/setup/2-multiple-inputs'
 
 import Hook1 from '../tutorial/5-useRef/setup/1-useRef-basics'
 import Hook2 from '../tutorial/6-useReducer/setup/'
+import Hook3 from '../tutorial/8-useContext/setup/1-context-api'
+import CustomHooks from '../tutorial/9-custom-hooks/setup/1-fetch-example'
 
 import PropDrilling from '../tutorial/7-prop-drilling/setup/1-prop-drilling'
 
@@ -66,14 +68,16 @@ const Header = () => {
                             <LinkContainer to="/chapter4-2"><NavDropdown.Item>Chapter 4-2</NavDropdown.Item></LinkContainer>
                         </NavDropdown>
 
-                        {/* Chapter 5 & 6: hooks -> useRef and useReducer */}
+                        {/* Chapter 5, 6, 8, 9: hooks -> useRef, useReducer, useContext and custom hooks */}
                         <NavDropdown title="Hooks" id="basic-nav-dropdown">
-                            <LinkContainer to="/chapter5-1"><NavDropdown.Item>Chapter 5-1</NavDropdown.Item></LinkContainer>
-                            <LinkContainer to="/chapter6-1"><NavDropdown.Item>Chapter 6-1</NavDropdown.Item></LinkContainer>
+                            <LinkContainer to="/chapter5"><NavDropdown.Item>useRef</NavDropdown.Item></LinkContainer>
+                            <LinkContainer to="/chapter6"><NavDropdown.Item>useReducer</NavDropdown.Item></LinkContainer>
+                            <LinkContainer to="/chapter8"><NavDropdown.Item>useContext</NavDropdown.Item></LinkContainer>
+                            <LinkContainer to="/chapter9"><NavDropdown.Item>Custom Hooks</NavDropdown.Item></LinkContainer>
                         </NavDropdown>
 
                         {/* Chapter 7: prop-drilling */}
-                        <LinkContainer to="/chapter7"><Nav.Link>Chapter 7</Nav.Link></LinkContainer>
+                        <LinkContainer to="/chapter7"><Nav.Link>Prop Drilling</Nav.Link></LinkContainer>
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>
@@ -103,11 +107,17 @@ const Header = () => {
                 <Route path="/chapter4-2" element={<Form2 />} />
 
                 {/* Chapter 5 & 6: hooks -> useRef and useReducer */}
-                <Route path="/chapter5-1" element={<Hook1 />} />
-                <Route path="/chapter6-1" element={<Hook2 />} />
+                <Route path="/chapter5" element={<Hook1 />} />
+                <Route path="/chapter6" element={<Hook2 />} />
 
                 {/* Chapter 7: prop-drilling */}
                 <Route path="/chapter7" element={<PropDrilling />} />
+
+                {/* Chapter 8: useContext */}
+                <Route path="/chapter8" element={<Hook3 />} />
+
+                {/* Chapter 9: Custom Hooks */}
+                <Route path="/chapter9" element={<CustomHooks />} />
             </Routes>
         </BrowserRouter>
     )
