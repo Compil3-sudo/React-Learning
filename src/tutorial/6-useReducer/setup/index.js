@@ -41,6 +41,7 @@ const Index = () => {
   return (
     <div className="container">
       <h2>useReducer</h2>
+      <p><a href="https://reactjs.org/docs/hooks-reference.html#usereducer">docs</a></p>
       {/* {showModal && <Modal />} */}
       {state.isModalOpen && <Modal modalContent={state.modalContent} closeModal={closeModal} />}
       <form onSubmit={handleSubmit} className='form'>
