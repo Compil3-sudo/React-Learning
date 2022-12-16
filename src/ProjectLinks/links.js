@@ -12,6 +12,8 @@ import GroceryImage from "../Images/GroceryImage.png";
 import NavbarImage from "../Images/NavbarImage.png";
 import SidebarImage from "../Images/SidebarImage.png";
 import SubmenuImage from "../Images/SubmenuImage.png";
+import ShoppingCartImage from "../Images/ShoppingCartImage.png";
+import CocktailsImage from "../Images/CocktailsImage.png";
 
 export const links = [
     {
@@ -91,6 +93,18 @@ export const links = [
         url: "https://dashing-croquembouche-40fb7d.netlify.app/",
         text: 'Stripe Submenu',
         image: SubmenuImage
+    },
+    {
+        id: 14,
+        url: "https://unrivaled-pixie-406a19.netlify.app/",
+        text: 'Shopping Cart',
+        image: ShoppingCartImage
+    },
+    {
+        id: 15,
+        url: "https://capable-salmiakki-653007.netlify.app/",
+        text: 'Cocktails',
+        image: CocktailsImage
     },
 
 ];
