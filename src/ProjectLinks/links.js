@@ -1,15 +1,17 @@
-import React from 'react'
-import BirthdayImage from "../Images/BirthdayImage.png"
-import ToursImage from "../Images/ToursImage.png"
-import ReviewsImage from "../Images/ReviewsImage.png"
-import QuestionsAccordionImage from "../Images/QuestionsAccordionImage.png"
-import RestaurentMenuImage from "../Images/RestaurentMenuImage.png"
-import ButtonsTabsImage from "../Images/ButtonsTabsImage.png"
-import SliderImage from "../Images/SliderImage.png"
-import LoremIpsumImage from "../Images/LoremIpsumImage.png"
-import ColorGeneratorImage from "../Images/ColorGeneratorImage.png"
-import GroceryImage from "../Images/GroceryImage.png"
-import NavbarImage from "../Images/NavbarImage.png"
+import React from 'react';
+import BirthdayImage from "../Images/BirthdayImage.png";
+import ToursImage from "../Images/ToursImage.png";
+import ReviewsImage from "../Images/ReviewsImage.png";
+import QuestionsAccordionImage from "../Images/QuestionsAccordionImage.png";
+import RestaurentMenuImage from "../Images/RestaurentMenuImage.png";
+import ButtonsTabsImage from "../Images/ButtonsTabsImage.png";
+import SliderImage from "../Images/SliderImage.png";
+import LoremIpsumImage from "../Images/LoremIpsumImage.png";
+import ColorGeneratorImage from "../Images/ColorGeneratorImage.png";
+import GroceryImage from "../Images/GroceryImage.png";
+import NavbarImage from "../Images/NavbarImage.png";
+import SidebarImage from "../Images/SidebarImage.png";
+import SubmenuImage from "../Images/SubmenuImage.png";
 
 export const links = [
     {
@@ -78,6 +80,17 @@ export const links = [
         text: 'Navbar',
         image: NavbarImage
     },
+    {
+        id: 12,
+        url: "https://jocular-sunshine-b40fae.netlify.app/",
+        text: 'Sidebar',
+        image: SidebarImage
+    },
+    {
+        id: 13,
+        url: "https://dashing-croquembouche-40fb7d.netlify.app/",
+        text: 'Stripe Submenu',
+        image: SubmenuImage
+    },
 
-
-]
+];
