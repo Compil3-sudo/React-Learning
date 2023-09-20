@@ -3,6 +3,10 @@ Learning React from John Smilga
 
 https://react-learning-projects.netlify.app/
 
+INDIVICIAL PROJECTS:
+
+https://github.com/Compil3-sudo/react-projects
+
 ## Corresponding Projects
 
 #### useState
