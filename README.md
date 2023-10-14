@@ -3,7 +3,7 @@ Learning React from John Smilga
 
 https://react-learning-projects.netlify.app/
 
-INDIVICIAL PROJECTS:
+INDIVIDUAL PROJECTS:
 
 https://github.com/Compil3-sudo/react-projects
 
